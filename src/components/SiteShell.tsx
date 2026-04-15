@@ -17,20 +17,12 @@ import { cn } from "@/src/lib/utils";
 
 function CompanyLogo() {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center">
       <img
         src="/images/logo-01.jpeg"
         alt="Logo TAM'S EMPIRE CONSTRUCTION"
-        className="h-10 w-10 rounded-lg border border-brand-gold/30 object-cover"
+        className="h-14 w-14 rounded-xl border border-brand-gold/30 object-cover md:h-16 md:w-16"
       />
-      <div className="flex flex-col">
-        <span className="font-display text-xl leading-none font-bold text-brand-gold">
-          TAM&apos;S EMPIRE
-        </span>
-        <span className="text-[10px] font-semibold uppercase tracking-widest text-brand-navy">
-          Construction SARL
-        </span>
-      </div>
     </div>
   );
 }
