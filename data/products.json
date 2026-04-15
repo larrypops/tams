@@ -1,0 +1,157 @@
+[
+  {
+    "id": "buses-metalliques",
+    "title": "Buses métalliques galvanisées – Solution durable pour vos ouvrages",
+    "shortTitle": "Buses métalliques",
+    "description": "Nos buses métalliques en acier galvanisé sont conçues pour répondre aux exigences des projets d’infrastructure modernes. Elles assurent un drainage efficace des eaux et garantissent la durabilité des ouvrages routiers et hydrauliques.",
+    "image": "/images/buse-01.jpeg",
+    "gallery": [
+      "/images/buse-01.jpeg",
+      "/images/buse-02.jpeg",
+      "/images/buse-03.jpeg",
+      "/images/buse-04.jpeg"
+    ],
+    "videoUrl": "/videos/buses-demo.mp4",
+    "features": [
+      "Diamètres : 800 mm à 4000 mm",
+      "Épaisseurs : 2 mm | 2.5 mm | 3 mm",
+      "Profil d’ondulation : 912 mm",
+      "Pas d’ondulation : 78 mm",
+      "Profondeur d’ondulation : 18 mm"
+    ],
+    "applications": [
+      "Drainage des eaux pluviales",
+      "Traversée de routes",
+      "Ouvrages hydrauliques",
+      "Aménagements urbains et ruraux"
+    ],
+    "advantages": [
+      "Haute résistance mécanique",
+      "Protection anticorrosion (acier galvanisé)",
+      "Longue durée de vie",
+      "Installation rapide et efficace",
+      "Réduction des coûts d’entretien"
+    ]
+  },
+  {
+    "id": "pannes-metalliques",
+    "title": "Pannes métalliques galvanisées – Solidité et performance pour vos structures",
+    "shortTitle": "Pannes métalliques (Z & C)",
+    "description": "Nos pannes métalliques profils Z et C en acier galvanisé sont spécialement conçues pour la réalisation de charpentes métalliques fiables et durables.",
+    "image": "/images/pannes-01.jpeg",
+    "gallery": [
+      "/images/pannes-01.jpeg",
+      "/images/pannes-02.jpeg",
+      "/images/pannes-03.jpeg",
+      "/images/pannes-04.jpeg"
+    ],
+    "features": [
+      "Profils : Z et C",
+      "Hauteurs : 80mm à 220 mm",
+      "Épaisseurs : 1.5 mm | 2 mm",
+      "Traitement : Acier galvanisé"
+    ],
+    "applications": [
+      "Charpentes métalliques",
+      "Toitures industrielles et commerciales",
+      "Hangars et entrepôts",
+      "Bâtiments agricoles"
+    ],
+    "advantages": [
+      "Haute résistance mécanique",
+      "Protection contre la corrosion",
+      "Structure légère et facile à manipuler",
+      "Installation rapide",
+      "Longue durée de vie"
+    ]
+  },
+  {
+    "id": "toles-couverture",
+    "title": "Tôles de couverture professionnelles – Performance, protection et finition haut de gamme",
+    "shortTitle": "Tôles de couverture",
+    "description": "Nous proposons des tôles de couverture en aluminium et en acier revêtu (prélaqué / aluzinc), conçues pour offrir une excellente protection contre les intempéries.",
+    "image": "/images/toles-01.jpeg",
+    "gallery": [
+      "/images/toles-01.jpeg",
+      "/images/toles-02.jpeg",
+      "/images/toles-03.jpeg"
+    ],
+    "features": [
+      "Types : Bac (4 & 5 nervures), Tuile, Ondulée",
+      "Épaisseurs Acier : 0.26mm à 0.50mm",
+      "Épaisseurs Alu : 0.35mm à 0.60mm",
+      "Couleurs : Vert, Bordeaux, Bleu, Noir, Rouge"
+    ],
+    "applications": [
+      "Maisons résidentielles",
+      "Bâtiments industriels",
+      "Hangars et entrepôts",
+      "Bâtiments commerciaux"
+    ],
+    "advantages": [
+      "Excellente protection contre la corrosion",
+      "Étanchéité optimale",
+      "Finition esthétique durable",
+      "Installation rapide",
+      "Longue durée de vie"
+    ]
+  },
+  {
+    "id": "gabions-metalliques",
+    "title": "Gabions métalliques – Solution de soutènement durable",
+    "shortTitle": "Gabions métalliques",
+    "description": "Nous mettons à votre disposition des gabions métalliques robustes, idéals pour les murs de soutènement et la protection contre l’érosion.",
+    "image": "/images/gabions-01.jpeg",
+    "gallery": [
+      "/images/gabions-01.jpeg",
+      "/images/gabions-02.jpeg",
+      "/images/gabions-03.jpeg"
+    ],
+    "features": [
+      "Structure résistante et durable",
+      "Adaptés aux projets publics et privés",
+      "Maillage haute performance"
+    ],
+    "applications": [
+      "Murs de soutènement",
+      "Protection contre l’érosion",
+      "Stabilisation de talus",
+      "Aménagements routiers et paysagers"
+    ],
+    "advantages": [
+      "Structure robuste",
+      "Installation rapide",
+      "Drainage naturel",
+      "Esthétique intégrée au paysage"
+    ]
+  },
+  {
+    "id": "toles-noires",
+    "title": "Tôles noires & produits métalliques – Idéal pour fabrication et structures",
+    "shortTitle": "Tôles noires",
+    "description": "Nous fournissons des tôles noires et divers produits métalliques de qualité supérieure, idéaux pour la fabrication, la soudure et les structures métalliques robustes.",
+    "image": "/images/toles-04.jpeg",
+    "gallery": [
+      "/images/toles-04.jpeg",
+      "/images/toles-05.jpeg"
+    ],
+    "features": [
+      "Large choix de dimensions",
+      "Différentes épaisseurs disponibles",
+      "Acier de haute qualité",
+      "Prêt pour la soudure"
+    ],
+    "applications": [
+      "Fabrication industrielle",
+      "Soudure et chaudronnerie",
+      "Structures métalliques",
+      "Équipements de chantier"
+    ],
+    "advantages": [
+      "Grande polyvalence",
+      "Excellente soudabilité",
+      "Résistance structurelle",
+      "Rapport qualité/prix optimal"
+    ]
+  }
+]
