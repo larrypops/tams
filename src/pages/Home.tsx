@@ -17,7 +17,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/realisations-01.jpeg" 
+            src="/images/realisation-02.jpeg" 
             alt="Construction background" 
             className="w-full h-full object-cover brightness-[0.3]"
           />

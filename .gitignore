@@ -3,4 +3,7 @@ node_modules
 out
 .DS_Store
 *.log
-images
+/images
+!/public/images
+!/public/images/**
+/public/images/.DS_Store
