@@ -29,3 +29,12 @@ Les produits sont gérés via le fichier JSON :
 - `data/products.json`
 
 Pour ajouter un produit, ajoute simplement un nouvel objet dans ce tableau (avec les mêmes champs que les autres éléments : `id`, `title`, `shortTitle`, `description`, `image`, `features`, `applications`, `advantages`, etc.).
+
+## Déploiement Vercel
+
+- Framework preset : `Next.js`
+- Root Directory : la racine du projet (pas `src`)
+- Build Command : `npm run build`
+- Install Command : `npm install`
+
+Si un ancien cache provoque une erreur de types, relance un déploiement avec **Clear build cache**.
