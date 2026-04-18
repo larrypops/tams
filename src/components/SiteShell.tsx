@@ -270,7 +270,11 @@ function WhatsAppFloating() {
       rel="noopener noreferrer"
       className="group fixed right-8 bottom-8 z-50 flex items-center justify-center rounded-full bg-[#25D366] p-4 text-white shadow-2xl transition-transform hover:scale-110"
     >
-      <MessageCircle size={32} />
+      <img
+        src="/icons/whatsapp-logo.svg"
+        alt="WhatsApp"
+        className="h-8 w-8"
+      />
       <span className="pointer-events-none absolute right-full mr-4 whitespace-nowrap rounded-lg bg-white px-4 py-2 text-sm font-bold text-brand-navy opacity-0 shadow-xl transition-opacity group-hover:opacity-100">
         Besoin d&apos;aide ? WhatsApp
       </span>

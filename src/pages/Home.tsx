@@ -1,242 +1,397 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { ArrowRight, Phone, MessageCircle, FileText, CheckCircle2, Building2, Users2, ShieldCheck, Clock } from 'lucide-react';
+import {
+  ArrowRight,
+  Building2,
+  CheckCircle2,
+  Clock,
+  FileText,
+  MessageCircle,
+  Phone,
+  ShieldCheck,
+  Users2,
+} from 'lucide-react';
 import Link from 'next/link';
 import { PRODUCTS, CONTACT_INFO } from '@/src/constants';
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 26 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
+
+const stagger = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 export default function Home() {
+  const featuredProducts = PRODUCTS.slice(0, 4);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="pt-20"
+      className="pt-20 overflow-x-hidden"
     >
-      {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/realisation-02.jpeg" 
-            alt="Construction background" 
-            className="w-full h-full object-cover brightness-[0.3]"
+      <section className="relative min-h-[calc(100svh-82px)] overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/realisations-01.jpeg"
+            alt="Chantier professionnel"
+            className="h-full w-full object-cover brightness-[0.38]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-brand-navy/70 to-brand-navy/35" />
+          <div className="absolute inset-0 hero-grid opacity-60" />
+          <div className="hero-glow absolute -left-20 top-1/4 h-72 w-72 rounded-full bg-brand-gold/20 blur-[120px]" />
+          <div className="hero-glow absolute -right-12 bottom-12 h-80 w-80 rounded-full bg-white/10 blur-[140px]" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
-          <div className="max-w-3xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+        <div className="relative z-10 mx-auto grid min-h-[calc(100svh-82px)] max-w-7xl items-center gap-16 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
+          <motion.div
+            variants={stagger}
+            initial="hidden"
+            animate="show"
+            className="lg:col-span-7"
+          >
+            <motion.span
+              variants={fadeUp}
+              className="mb-7 inline-flex items-center gap-2 rounded-full border border-brand-gold/40 bg-brand-gold/15 px-5 py-2 text-sm font-bold uppercase tracking-[0.18em] text-brand-gold"
             >
-              <span className="inline-block px-4 py-1.5 bg-brand-gold/20 border border-brand-gold/30 text-brand-gold rounded-full text-sm font-bold uppercase tracking-wider mb-6">
-                TAM'S EMPIRE CONSTRUCTION SARL
-              </span>
-              <h1 className="text-5xl md:text-7xl font-display font-extrabold text-white leading-tight mb-6">
-                Grossiste en matériaux de <span className="text-brand-gold">construction</span> au Cameroun
-              </h1>
-              <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-                Approvisionnement fiable pour vos chantiers et projets. Nous accompagnons les entreprises BTP, mairies, revendeurs et artisans avec des matériaux métalliques de qualité.
-              </p>
-              
-              <div className="flex flex-wrap gap-4">
-                <a href={`tel:${CONTACT_INFO.phone1.replace(/\s+/g, '')}`} className="bg-brand-gold text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-yellow-600 transition-all shadow-xl shadow-yellow-900/20">
+              TAM&apos;S EMPIRE CONSTRUCTION SARL
+            </motion.span>
+
+            <motion.h1
+              variants={fadeUp}
+              className="headline-shine max-w-3xl text-5xl leading-[0.95] font-extrabold text-white md:text-7xl"
+            >
+              Grossiste en matériaux de <span className="text-brand-gold">construction</span> au Cameroun
+            </motion.h1>
+
+            <motion.p
+              variants={fadeUp}
+              className="mt-7 max-w-2xl text-lg leading-relaxed text-gray-200 md:text-xl"
+            >
+              Approvisionnement fiable pour vos chantiers et projets. Nous accompagnons les entreprises BTP, mairies, revendeurs et artisans avec des matériaux métalliques de qualité.
+            </motion.p>
+
+            <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-4">
+              <a
+                href={`tel:${CONTACT_INFO.phone1.replace(/\s+/g, '')}`}
+                className="rounded-xl bg-brand-gold px-8 py-4 font-bold text-white shadow-2xl shadow-yellow-900/30 transition-transform hover:-translate-y-0.5 hover:bg-yellow-600"
+              >
+                <span className="flex items-center gap-2">
                   <Phone size={20} />
                   Appeler maintenant
-                </a>
-                <a href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}`} className="bg-white text-brand-navy px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-gray-100 transition-all shadow-xl">
+                </span>
+              </a>
+              <a
+                href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}`}
+                className="rounded-xl bg-white px-8 py-4 font-bold text-brand-navy shadow-2xl transition-transform hover:-translate-y-0.5 hover:bg-gray-100"
+              >
+                <span className="flex items-center gap-2">
                   <MessageCircle size={20} className="text-[#25D366]" />
                   WhatsApp direct
-                </a>
-                <Link href="/contact" className="w-full sm:w-auto px-8 py-4 rounded-xl font-bold border border-white/20 text-white hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                </span>
+              </a>
+              <Link
+                href="/contact"
+                className="w-full rounded-xl border border-white/25 px-8 py-4 text-center font-bold text-white transition-colors hover:bg-white/10 sm:w-auto"
+              >
+                <span className="flex items-center justify-center gap-2">
                   <FileText size={20} />
                   Demander un devis
-                </Link>
-              </div>
+                </span>
+              </Link>
             </motion.div>
-          </div>
+
+            <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-3">
+              {['Stocks disponibles', 'Livraison chantier', 'Support WhatsApp 24/7'].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur-md"
+                >
+                  {item}
+                </span>
+              ))}
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.92, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="relative hidden lg:col-span-5 lg:block"
+          >
+            <div className="relative h-[560px]">
+              <div className="absolute left-8 top-0 w-[72%] overflow-hidden rounded-[2.5rem] border border-white/15 shadow-2xl">
+                <img
+                  src="/images/realisations-03.jpeg"
+                  alt="Réalisation chantier"
+                  className="h-[420px] w-full object-cover"
+                />
+              </div>
+              <div className="absolute right-0 top-40 w-[56%] overflow-hidden rounded-[2rem] border border-white/20 shadow-2xl">
+                <img
+                  src="/images/pannes-05.jpeg"
+                  alt="Pannes métalliques"
+                  className="h-[260px] w-full object-cover"
+                />
+              </div>
+              <div className="absolute left-0 bottom-0 w-[48%] rounded-2xl border border-brand-gold/30 bg-brand-navy/85 p-6 backdrop-blur-md">
+                <p className="text-5xl font-display font-black text-brand-gold">10+</p>
+                <p className="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-white/90">
+                  Années d&apos;expérience terrain
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute bottom-0 right-0 w-1/3 h-1/2 bg-brand-gold/10 blur-[120px] rounded-full -mr-20 -mb-20" />
       </section>
 
-      {/* Presentation Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="relative bg-white py-28">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute right-0 top-0 h-64 w-64 rounded-full bg-brand-gold/10 blur-[110px]" />
+          <div className="absolute bottom-6 left-8 h-56 w-56 rounded-full bg-brand-navy/10 blur-[100px]" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-14 lg:grid-cols-2">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -34 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
             >
-              <h2 className="text-4xl font-display font-bold mb-6">
+              <h2 className="text-4xl font-display font-extrabold text-brand-navy md:text-5xl">
                 La référence des bâtisseurs
               </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="mt-6 text-lg leading-relaxed text-gray-600">
                 Chez TAM’S EMPIRE CONSTRUCTION SARL, nous sommes spécialisés dans la fourniture de matériaux de construction métalliques pour les projets professionnels et industriels.
               </p>
-              <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+              <p className="mt-5 text-lg leading-relaxed text-gray-600">
                 Nous mettons à votre disposition des solutions fiables, durables et adaptées aux réalités du terrain au Cameroun. Nous ne vendons pas seulement des matériaux, nous sécurisons vos projets et vos investissements.
               </p>
-              
-              <div className="grid grid-cols-2 gap-6">
+
+              <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {[
                   { icon: Building2, title: 'BTP & Mairies', desc: 'Accompagnement institutionnel' },
                   { icon: Users2, title: 'Revendeurs', desc: 'Approvisionnement régulier' },
                   { icon: ShieldCheck, title: 'Qualité Pro', desc: 'Matériaux certifiés' },
                   { icon: Clock, title: 'Réactivité', desc: 'Service rapide' },
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-4">
-                    <div className="w-12 h-12 bg-yellow-50 rounded-xl flex items-center justify-center text-brand-gold shrink-0">
-                      <item.icon size={24} />
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.08 * i }}
+                    className="rounded-2xl border border-gray-100 bg-white/80 p-5 shadow-md"
+                  >
+                    <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-gold/15 text-brand-gold">
+                      <item.icon size={20} />
                     </div>
-                    <div>
-                      <h4 className="font-bold text-brand-navy">{item.title}</h4>
-                      <p className="text-sm text-gray-500">{item.desc}</p>
-                    </div>
-                  </div>
+                    <h4 className="font-bold text-brand-navy">{item.title}</h4>
+                    <p className="mt-1 text-sm text-gray-500">{item.desc}</p>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>
-            
+
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: 34 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
               className="relative"
             >
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/images/pannes-05.jpeg" 
-                  alt="Construction materials" 
-                  className="w-full h-full object-cover"
+              <div className="overflow-hidden rounded-[2.7rem] border border-gray-100 shadow-2xl">
+                <img
+                  src="/images/pannes-05.jpeg"
+                  alt="Matériaux de construction"
+                  className="aspect-[5/6] w-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-10 -left-10 bg-brand-gold text-white p-8 rounded-3xl shadow-2xl hidden md:block">
-                <p className="text-4xl font-display font-black mb-1">100%</p>
-                <p className="font-bold uppercase tracking-wider text-sm">Fiabilité Garantie</p>
+              <div className="absolute -bottom-8 -left-6 rounded-2xl bg-brand-navy px-8 py-6 text-white shadow-2xl">
+                <p className="text-4xl font-display font-black text-brand-gold">100%</p>
+                <p className="text-xs font-bold uppercase tracking-[0.18em]">Fiabilité garantie</p>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Products Preview */}
-      <section className="py-24 bg-brand-gray">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-display font-bold mb-4">Nos Produits Principaux</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+      <section className="bg-[#f6f3eb] py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 26 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-14 text-center"
+          >
+            <h2 className="text-4xl font-display font-extrabold text-brand-navy md:text-5xl">
+              Nos Produits Principaux
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-gray-600">
               Une gamme complète de solutions métalliques pour tous vos besoins de construction.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {PRODUCTS.map((product, index) => (
-              <motion.div
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-12">
+            {featuredProducts.map((product, index) => (
+              <motion.article
                 key={product.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group"
+                transition={{ delay: 0.08 * index }}
+                className={`group overflow-hidden rounded-[2rem] border border-black/5 bg-white shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl ${
+                  index === 0 ? 'xl:col-span-6' : 'xl:col-span-2'
+                } md:col-span-1`}
               >
-                <div className="h-48 overflow-hidden relative">
-                  <img 
-                    src={product.image} 
-                    alt={product.shortTitle} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    referrerPolicy="no-referrer"
+                <div className={`relative overflow-hidden ${index === 0 ? 'h-80' : 'h-64'}`}>
+                  <img
+                    src={product.image}
+                    alt={product.shortTitle}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />
+                  <div className="absolute bottom-0 p-6">
+                    <h3 className="text-2xl font-display font-bold text-white">
+                      {product.shortTitle}
+                    </h3>
+                  </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display font-bold text-xl mb-3 group-hover:text-brand-gold transition-colors">{product.shortTitle}</h3>
-                  <p className="text-gray-500 text-sm mb-6 line-clamp-2">
+                  <p className="text-sm leading-relaxed text-gray-600">
                     {product.description}
                   </p>
-                  <Link href={`/produits/${product.id}`} className="text-brand-gold font-bold flex items-center gap-2 group/btn">
+                  <Link
+                    href={`/produits/${product.id}`}
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-brand-gold transition-all hover:gap-3"
+                  >
                     En savoir plus
-                    <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
+                    <ArrowRight size={16} />
                   </Link>
                 </div>
-              </motion.div>
+              </motion.article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-24 bg-brand-navy text-white overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-display font-bold mb-12">Pourquoi nous choisir ?</h2>
-              <div className="space-y-8">
-                {[
-                  { title: 'Approvisionnement fiable et régulier', desc: 'Nous garantissons une disponibilité constante de nos stocks.' },
-                  { title: 'Produits de qualité professionnelle', desc: 'Tous nos matériaux répondent aux normes les plus strictes.' },
-                  { title: 'Disponibilité en volume', desc: 'Capacité à fournir des chantiers de grande envergure.' },
-                  { title: 'Réactivité et service rapide', desc: 'Délais de livraison optimisés pour vos projets.' },
-                ].map((item, i) => (
-                  <div key={i} className="flex gap-6">
-                    <div className="w-10 h-10 rounded-full bg-brand-gold flex items-center justify-center shrink-0">
-                      <CheckCircle2 size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                      <p className="text-gray-400">{item.desc}</p>
-                    </div>
+      <section className="relative overflow-hidden py-28 text-white">
+        <div className="absolute inset-0">
+          <img
+            src="/images/buse-05.jpeg"
+            alt="Matériaux de qualité"
+            className="h-full w-full object-cover brightness-[0.32]"
+          />
+          <div className="absolute inset-0 bg-brand-navy/70" />
+        </div>
+
+        <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.65 }}
+          >
+            <h2 className="text-4xl font-display font-extrabold md:text-5xl">
+              Pourquoi nous choisir ?
+            </h2>
+            <div className="mt-10 space-y-6">
+              {[
+                { title: 'Approvisionnement fiable et régulier', desc: 'Nous garantissons une disponibilité constante de nos stocks.' },
+                { title: 'Produits de qualité professionnelle', desc: 'Tous nos matériaux répondent aux normes les plus strictes.' },
+                { title: 'Disponibilité en volume', desc: 'Capacité à fournir des chantiers de grande envergure.' },
+                { title: 'Réactivité et service rapide', desc: 'Délais de livraison optimisés pour vos projets.' },
+              ].map((item, i) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.08 * i }}
+                  className="flex items-start gap-4 rounded-xl border border-white/15 bg-white/8 p-4 backdrop-blur-sm"
+                >
+                  <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-gold text-white">
+                    <CheckCircle2 size={18} />
                   </div>
-                ))}
-              </div>
+                  <div>
+                    <h4 className="text-lg font-bold">{item.title}</h4>
+                    <p className="mt-1 text-sm text-gray-200">{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
-            <div className="relative">
-              <div className="aspect-video rounded-3xl overflow-hidden border border-white/10">
-                <img 
-                  src="/images/buse-05.jpeg" 
-                  alt="Quality materials" 
-                  className="w-full h-full object-cover opacity-60"
-                />
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-6xl font-display font-black text-brand-gold mb-2">TAM'S</p>
-                  <p className="text-xl font-bold tracking-widest uppercase">EMPIRE</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="rounded-[2.5rem] border border-white/15 bg-white/10 p-10 text-center backdrop-blur-md"
+          >
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-brand-gold">Partenaire de confiance</p>
+            <p className="mt-6 text-6xl font-display font-black text-brand-gold">TAM&apos;S</p>
+            <p className="text-2xl font-bold tracking-[0.18em]">EMPIRE</p>
+            <p className="mt-6 text-sm leading-relaxed text-gray-200">
+              Qualité, disponibilité et performance pour accompagner vos projets de construction, du plus simple au plus exigeant.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-brand-gold rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl shadow-yellow-200">
+      <section className="bg-white py-28">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative overflow-hidden rounded-[3rem] bg-brand-gold p-12 text-center text-white shadow-2xl shadow-yellow-200 md:p-20"
+          >
+            <div className="absolute -left-14 -top-16 h-52 w-52 rounded-full bg-white/12 blur-2xl" />
+            <div className="absolute -bottom-20 right-0 h-64 w-64 rounded-full bg-brand-navy/20 blur-3xl" />
+
             <div className="relative z-10">
-              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Besoin d’un fournisseur fiable pour vos chantiers ?</h2>
-              <p className="text-xl opacity-90 mb-12 max-w-2xl mx-auto">
+              <h2 className="text-4xl font-display font-extrabold md:text-5xl">
+                Besoin d’un fournisseur fiable pour vos chantiers ?
+              </h2>
+              <p className="mx-auto mt-6 max-w-2xl text-xl opacity-90">
                 Contactez-nous dès maintenant pour un devis rapide et personnalisé. Nos experts sont à votre écoute.
               </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <a href={`tel:${CONTACT_INFO.phone1.replace(/\s+/g, '')}`} className="bg-brand-navy text-white px-10 py-5 rounded-2xl font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-xl">
-                  <Phone size={24} />
-                  {CONTACT_INFO.phone1}
+              <div className="mt-10 flex flex-col justify-center gap-5 sm:flex-row">
+                <a
+                  href={`tel:${CONTACT_INFO.phone1.replace(/\s+/g, '')}`}
+                  className="rounded-2xl bg-brand-navy px-10 py-5 text-lg font-bold text-white shadow-xl transition-transform hover:scale-105"
+                >
+                  <span className="flex items-center justify-center gap-3">
+                    <Phone size={24} />
+                    {CONTACT_INFO.phone1}
+                  </span>
                 </a>
-                <a href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}`} className="bg-white text-brand-navy px-10 py-5 rounded-2xl font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-xl">
-                  <MessageCircle size={24} className="text-[#25D366]" />
-                  WhatsApp Direct
+                <a
+                  href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}`}
+                  className="rounded-2xl bg-white px-10 py-5 text-lg font-bold text-brand-navy shadow-xl transition-transform hover:scale-105"
+                >
+                  <span className="flex items-center justify-center gap-3">
+                    <MessageCircle size={24} className="text-[#25D366]" />
+                    WhatsApp Direct
+                  </span>
                 </a>
               </div>
             </div>
-            {/* Decorative circles */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-navy/10 rounded-full -ml-32 -mb-32 blur-3xl" />
-          </div>
+          </motion.div>
         </div>
       </section>
     </motion.div>
