@@ -2,7 +2,14 @@
 
 import { useMemo, useState } from 'react';
 import { motion } from 'motion/react';
-import { CheckCircle2, MessageCircle, ArrowRight, Search } from 'lucide-react';
+import {
+  CheckCircle2,
+  MessageCircle,
+  ArrowRight,
+  Search,
+  SlidersHorizontal,
+  X,
+} from 'lucide-react';
 import Link from 'next/link';
 import { PRODUCTS, CONTACT_INFO, PRODUCT_CATEGORIES } from '@/src/constants';
 
@@ -41,6 +48,17 @@ export default function Products() {
       ),
     [],
   );
+  const categoryFilters = useMemo(
+    () => [
+      { id: 'all', label: 'Toutes les catégories', emoji: '🧩' },
+      ...PRODUCT_CATEGORIES,
+    ],
+    [],
+  );
+  const selectedCategoryLabel =
+    selectedCategory === 'all'
+      ? 'Toutes les catégories'
+      : categoryLookup.get(selectedCategory)?.label ?? 'Toutes les catégories';
 
   const buildProductWhatsAppLink = (productName: string) => {
     const message = encodeURIComponent(
@@ -67,70 +85,120 @@ export default function Products() {
           </p>
         </div>
 
-        <section className="mb-16 rounded-3xl border border-yellow-100 bg-yellow-50 p-6 md:p-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1.7fr] lg:items-end">
-            <div>
-              <label
-                htmlFor="product-search"
-                className="mb-3 block text-sm font-black uppercase tracking-widest text-brand-gold"
-              >
-                Rechercher un produit
-              </label>
-              <div className="relative">
-                <Search
-                  size={18}
-                  className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"
-                />
-                <input
-                  id="product-search"
-                  type="text"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Ex: tôles, gabions, pannes..."
-                  className="w-full rounded-xl border border-gray-200 bg-white py-3 pl-11 pr-4 text-sm text-brand-navy outline-none transition-colors focus:border-brand-gold"
-                />
+        <section className="relative mb-16 overflow-hidden rounded-[2rem] border border-brand-navy/10 bg-white p-5 shadow-[0_24px_60px_-36px_rgba(18,44,91,0.6)] md:p-8">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-r from-brand-gold/20 via-brand-gold/5 to-brand-navy/10" />
+          <div className="pointer-events-none absolute -top-16 -right-12 h-40 w-40 rounded-full bg-brand-gold/20 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-20 -left-16 h-44 w-44 rounded-full bg-brand-navy/15 blur-3xl" />
+
+          <div className="relative space-y-6">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.1fr_2fr] lg:items-end">
+              <div>
+                <label
+                  htmlFor="product-search"
+                  className="mb-3 block text-xs font-black uppercase tracking-[0.22em] text-brand-gold"
+                >
+                  Rechercher un produit
+                </label>
+                <div className="relative rounded-2xl border border-brand-navy/10 bg-white/95 shadow-sm transition-all duration-300 focus-within:border-brand-gold/60 focus-within:shadow-[0_0_0_4px_rgba(212,175,55,0.12)]">
+                  <Search
+                    size={18}
+                    className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-brand-navy/50"
+                  />
+                  <input
+                    id="product-search"
+                    type="text"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder="Ex: tôles, gabions, pannes..."
+                    className="h-12 w-full rounded-2xl bg-transparent pr-20 pl-11 text-sm text-brand-navy outline-none placeholder:text-brand-navy/45"
+                  />
+                  {query.trim().length > 0 && (
+                    <button
+                      type="button"
+                      onClick={() => setQuery('')}
+                      className="absolute top-1/2 right-2 inline-flex -translate-y-1/2 items-center gap-1 rounded-full bg-brand-navy/90 px-3 py-1 text-xs font-semibold text-white transition-all hover:bg-brand-navy"
+                    >
+                      <X size={12} />
+                      Effacer
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <div>
+                <p className="mb-3 flex items-center gap-2 text-xs font-black uppercase tracking-[0.22em] text-brand-gold">
+                  <SlidersHorizontal size={14} />
+                  Filtrer par catégorie
+                </p>
+                <div className="relative">
+                  <div className="pointer-events-none absolute top-0 bottom-1 left-0 w-8 bg-gradient-to-r from-white via-white/80 to-transparent md:hidden" />
+                  <div className="pointer-events-none absolute top-0 right-0 bottom-1 w-8 bg-gradient-to-l from-white via-white/80 to-transparent md:hidden" />
+
+                  <div className="flex snap-x gap-2 overflow-x-auto px-1 pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:flex-wrap md:overflow-visible md:px-0">
+                    {categoryFilters.map((category) => {
+                      const isActive = selectedCategory === category.id;
+                      return (
+                        <motion.button
+                          layout
+                          key={category.id}
+                          type="button"
+                          onClick={() => setSelectedCategory(category.id)}
+                          aria-pressed={isActive}
+                          whileTap={{ scale: 0.97 }}
+                          className={`relative isolate snap-start shrink-0 overflow-hidden rounded-full border px-4 py-2.5 text-sm font-semibold whitespace-nowrap transition-all duration-300 md:py-2 ${
+                            isActive
+                              ? 'border-brand-navy text-white shadow-[0_10px_24px_-14px_rgba(27,58,109,0.8)]'
+                              : 'border-brand-navy/15 bg-white text-brand-navy/80 hover:-translate-y-0.5 hover:border-brand-gold/70 hover:text-brand-navy'
+                          }`}
+                        >
+                          {isActive && (
+                            <motion.span
+                              layoutId="active-category-pill"
+                              className="absolute inset-0 -z-10 rounded-full bg-brand-navy"
+                              transition={{
+                                type: 'spring',
+                                stiffness: 380,
+                                damping: 30,
+                              }}
+                            />
+                          )}
+                          <span className="flex items-center gap-2">
+                            <span>{category.emoji}</span>
+                            <span>{category.label}</span>
+                          </span>
+                        </motion.button>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div>
-              <p className="mb-3 text-sm font-black uppercase tracking-widest text-brand-gold">
-                Filtrer par catégorie
+            <div className="flex flex-col gap-3 border-t border-brand-navy/10 pt-4 text-sm text-brand-navy/70 sm:flex-row sm:items-center sm:justify-between">
+              <p className="leading-relaxed">
+                <span className="font-bold text-brand-navy">{filteredProducts.length}</span>{' '}
+                produit{filteredProducts.length > 1 ? 's' : ''} trouvé
+                {filteredProducts.length > 1 ? 's' : ''} dans{' '}
+                <span className="font-semibold text-brand-navy">
+                  {selectedCategoryLabel}
+                </span>
+                .
               </p>
-              <div className="flex flex-wrap gap-2">
+              {(query.trim().length > 0 || selectedCategory !== 'all') && (
                 <button
                   type="button"
-                  onClick={() => setSelectedCategory('all')}
-                  className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
-                    selectedCategory === 'all'
-                      ? 'bg-brand-navy text-white'
-                      : 'bg-white text-brand-navy border border-gray-200 hover:border-brand-gold hover:text-brand-gold'
-                  }`}
+                  onClick={() => {
+                    setQuery('');
+                    setSelectedCategory('all');
+                  }}
+                  className="inline-flex w-fit items-center gap-2 rounded-full border border-brand-navy/15 bg-white px-4 py-2 text-xs font-semibold tracking-wide text-brand-navy transition-all hover:border-brand-gold hover:text-brand-gold"
                 >
-                  Toutes les catégories
+                  <X size={13} />
+                  Réinitialiser les filtres
                 </button>
-                {PRODUCT_CATEGORIES.map((category) => (
-                  <button
-                    key={category.id}
-                    type="button"
-                    onClick={() => setSelectedCategory(category.id)}
-                    className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
-                      selectedCategory === category.id
-                        ? 'bg-brand-navy text-white'
-                        : 'bg-white text-brand-navy border border-gray-200 hover:border-brand-gold hover:text-brand-gold'
-                    }`}
-                  >
-                    {category.emoji} {category.label}
-                  </button>
-                ))}
-              </div>
+              )}
             </div>
           </div>
-
-          <p className="mt-5 text-sm text-gray-600">
-            {filteredProducts.length} produit
-            {filteredProducts.length > 1 ? 's' : ''} trouvé
-            {filteredProducts.length > 1 ? 's' : ''}.
-          </p>
         </section>
 
         {filteredProducts.length === 0 ? (
