@@ -1,7 +1,14 @@
-import productsData from "@/data/products.json";
+import productCatalogData from "@/data/products.json";
+
+export interface ProductCategory {
+  id: string;
+  label: string;
+  emoji: string;
+}
 
 export interface Product {
   id: string;
+  categoryId: string;
   title: string;
   shortTitle: string;
   description: string;
@@ -15,9 +22,18 @@ export interface Product {
     label: string;
     value: string;
   }[];
+  availability?: "available" | "coming-soon";
 }
 
-export const PRODUCTS: Product[] = productsData as Product[];
+interface ProductCatalogData {
+  categories: ProductCategory[];
+  products: Product[];
+}
+
+const catalog = productCatalogData as ProductCatalogData;
+
+export const PRODUCT_CATEGORIES: ProductCategory[] = catalog.categories;
+export const PRODUCTS: Product[] = catalog.products;
 
 export const CONTACT_INFO = {
   phone1: '+237 693 44 89 89',

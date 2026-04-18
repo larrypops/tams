@@ -26,7 +26,10 @@ export default function ProductDetail() {
     );
   }
 
-  const whatsappLink = `https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}?text=Bonjour, je souhaite avoir plus d'informations sur le produit : ${product.title}`;
+  const whatsappMessage = encodeURIComponent(
+    `Bonjour, je souhaite avoir plus d'informations sur le produit : ${product.title}.`,
+  );
+  const whatsappLink = `https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}?text=${whatsappMessage}`;
 
   return (
     <motion.div

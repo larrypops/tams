@@ -1,157 +1,339 @@
-[
-  {
-    "id": "buses-metalliques",
-    "title": "Buses métalliques galvanisées – Solution durable pour vos ouvrages",
-    "shortTitle": "Buses métalliques",
-    "description": "Nos buses métalliques en acier galvanisé sont conçues pour répondre aux exigences des projets d’infrastructure modernes. Elles assurent un drainage efficace des eaux et garantissent la durabilité des ouvrages routiers et hydrauliques.",
-    "image": "/images/buse-01.jpeg",
-    "gallery": [
-      "/images/buse-01.jpeg",
-      "/images/buse-02.jpeg",
-      "/images/buse-03.jpeg",
-      "/images/buse-04.jpeg"
-    ],
-    "videoUrl": "/videos/buses-demo.mp4",
-    "features": [
-      "Diamètres : 800 mm à 4000 mm",
-      "Épaisseurs : 2 mm | 2.5 mm | 3 mm",
-      "Profil d’ondulation : 912 mm",
-      "Pas d’ondulation : 78 mm",
-      "Profondeur d’ondulation : 18 mm"
-    ],
-    "applications": [
-      "Drainage des eaux pluviales",
-      "Traversée de routes",
-      "Ouvrages hydrauliques",
-      "Aménagements urbains et ruraux"
-    ],
-    "advantages": [
-      "Haute résistance mécanique",
-      "Protection anticorrosion (acier galvanisé)",
-      "Longue durée de vie",
-      "Installation rapide et efficace",
-      "Réduction des coûts d’entretien"
-    ]
-  },
-  {
-    "id": "pannes-metalliques",
-    "title": "Pannes métalliques galvanisées – Solidité et performance pour vos structures",
-    "shortTitle": "Pannes métalliques (Z & C)",
-    "description": "Nos pannes métalliques profils Z et C en acier galvanisé sont spécialement conçues pour la réalisation de charpentes métalliques fiables et durables.",
-    "image": "/images/pannes-01.jpeg",
-    "gallery": [
-      "/images/pannes-01.jpeg",
-      "/images/pannes-02.jpeg",
-      "/images/pannes-03.jpeg",
-      "/images/pannes-04.jpeg"
-    ],
-    "features": [
-      "Profils : Z et C",
-      "Hauteurs : 80mm à 220 mm",
-      "Épaisseurs : 1.5 mm | 2 mm",
-      "Traitement : Acier galvanisé"
-    ],
-    "applications": [
-      "Charpentes métalliques",
-      "Toitures industrielles et commerciales",
-      "Hangars et entrepôts",
-      "Bâtiments agricoles"
-    ],
-    "advantages": [
-      "Haute résistance mécanique",
-      "Protection contre la corrosion",
-      "Structure légère et facile à manipuler",
-      "Installation rapide",
-      "Longue durée de vie"
-    ]
-  },
-  {
-    "id": "toles-couverture",
-    "title": "Tôles de couverture professionnelles – Performance, protection et finition haut de gamme",
-    "shortTitle": "Tôles de couverture",
-    "description": "Nous proposons des tôles de couverture en aluminium et en acier revêtu (prélaqué / aluzinc), conçues pour offrir une excellente protection contre les intempéries.",
-    "image": "/images/toles-01.jpeg",
-    "gallery": [
-      "/images/toles-01.jpeg",
-      "/images/toles-02.jpeg",
-      "/images/toles-03.jpeg"
-    ],
-    "features": [
-      "Types : Bac (4 & 5 nervures), Tuile, Ondulée",
-      "Épaisseurs Acier : 0.26mm à 0.50mm",
-      "Épaisseurs Alu : 0.35mm à 0.60mm",
-      "Couleurs : Vert, Bordeaux, Bleu, Noir, Rouge"
-    ],
-    "applications": [
-      "Maisons résidentielles",
-      "Bâtiments industriels",
-      "Hangars et entrepôts",
-      "Bâtiments commerciaux"
-    ],
-    "advantages": [
-      "Excellente protection contre la corrosion",
-      "Étanchéité optimale",
-      "Finition esthétique durable",
-      "Installation rapide",
-      "Longue durée de vie"
-    ]
-  },
-  {
-    "id": "gabions-metalliques",
-    "title": "Gabions métalliques – Solution de soutènement durable",
-    "shortTitle": "Gabions métalliques",
-    "description": "Nous mettons à votre disposition des gabions métalliques robustes, idéals pour les murs de soutènement et la protection contre l’érosion.",
-    "image": "/images/gabions-01.jpeg",
-    "gallery": [
-      "/images/gabions-01.jpeg",
-      "/images/gabions-02.jpeg",
-      "/images/gabions-03.jpeg"
-    ],
-    "features": [
-      "Structure résistante et durable",
-      "Adaptés aux projets publics et privés",
-      "Maillage haute performance"
-    ],
-    "applications": [
-      "Murs de soutènement",
-      "Protection contre l’érosion",
-      "Stabilisation de talus",
-      "Aménagements routiers et paysagers"
-    ],
-    "advantages": [
-      "Structure robuste",
-      "Installation rapide",
-      "Drainage naturel",
-      "Esthétique intégrée au paysage"
-    ]
-  },
-  {
-    "id": "toles-noires",
-    "title": "Tôles noires & produits métalliques – Idéal pour fabrication et structures",
-    "shortTitle": "Tôles noires",
-    "description": "Nous fournissons des tôles noires et divers produits métalliques de qualité supérieure, idéaux pour la fabrication, la soudure et les structures métalliques robustes.",
-    "image": "/images/toles-04.jpeg",
-    "gallery": [
-      "/images/toles-04.jpeg",
-      "/images/toles-05.jpeg"
-    ],
-    "features": [
-      "Large choix de dimensions",
-      "Différentes épaisseurs disponibles",
-      "Acier de haute qualité",
-      "Prêt pour la soudure"
-    ],
-    "applications": [
-      "Fabrication industrielle",
-      "Soudure et chaudronnerie",
-      "Structures métalliques",
-      "Équipements de chantier"
-    ],
-    "advantages": [
-      "Grande polyvalence",
-      "Excellente soudabilité",
-      "Résistance structurelle",
-      "Rapport qualité/prix optimal"
-    ]
-  }
-]
+{
+  "categories": [
+    {
+      "id": "structure-metallique-industrielle",
+      "label": "Structure métallique & industrielle",
+      "emoji": "🏗"
+    },
+    {
+      "id": "couverture-toiture",
+      "label": "Couverture & toiture",
+      "emoji": "🏠"
+    },
+    {
+      "id": "materiaux-construction",
+      "label": "Matériaux de construction",
+      "emoji": "🧱"
+    },
+    {
+      "id": "revetements-finitions",
+      "label": "Revêtements & finitions",
+      "emoji": "🎨"
+    }
+  ],
+  "products": [
+    {
+      "id": "buses-metalliques",
+      "categoryId": "structure-metallique-industrielle",
+      "title": "Buses métalliques galvanisées – Solution durable pour vos ouvrages",
+      "shortTitle": "Buses métalliques",
+      "description": "Nos buses métalliques en acier galvanisé assurent un drainage efficace des eaux et garantissent la durabilité des ouvrages routiers et hydrauliques.",
+      "image": "/images/buse-01.jpeg",
+      "gallery": [
+        "/images/buse-01.jpeg",
+        "/images/buse-02.jpeg",
+        "/images/buse-03.jpeg",
+        "/images/buse-04.jpeg"
+      ],
+      "features": [
+        "Diamètres : 800 mm; 1000 mm; 1500 mm; 2000 mm; 3000 mm; 4000 mm",
+        "Épaisseurs : 2 mm | 2.5 mm | 3 mm",
+        "Traitement : acier galvanisé"
+      ],
+      "applications": [
+        "Drainage des eaux pluviales",
+        "Traversées de routes",
+        "Ouvrages hydrauliques"
+      ],
+      "advantages": [
+        "Haute résistance mécanique",
+        "Longue durée de vie",
+        "Installation rapide"
+      ]
+    },
+    {
+      "id": "pannes-metalliques",
+      "categoryId": "structure-metallique-industrielle",
+      "title": "Pannes métalliques galvanisées (Z & C)",
+      "shortTitle": "Pannes métalliques (Z & C)",
+      "description": "Pannes profils Z et C en acier galvanisé pour charpentes métalliques robustes et durables.",
+      "image": "/images/pannes-01.jpeg",
+      "gallery": [
+        "/images/pannes-01.jpeg",
+        "/images/pannes-02.jpeg",
+        "/images/pannes-03.jpeg",
+        "/images/pannes-04.jpeg"
+      ],
+      "features": [
+        "Profils : Z et C",
+        "Hauteurs : 80 mm; 100 mm; 120 mm; 140 mm; 150mm; 200mm; 220 mm",
+        "Épaisseurs : 1.5 mm | 2 mm"
+      ],
+      "applications": [
+        "Charpentes métalliques",
+        "Hangars et entrepôts",
+        "Bâtiments agricoles"
+      ],
+      "advantages": [
+        "Protection anticorrosion",
+        "Légèreté et facilité de pose",
+        "Excellente tenue structurelle"
+      ]
+    },
+    {
+      "id": "toles-lisses-noires",
+      "categoryId": "structure-metallique-industrielle",
+      "title": "🔩 Tôles lisses noires en acier au carbone",
+      "shortTitle": "Tôles lisses noires (acier carbone)",
+      "description": "Robustesse, précision et performance pour vos travaux de fabrication métallique. Ce n’est pas juste une tôle : c’est la base de vos réalisations solides et durables. Passez votre commande dès maintenant : 693 44 89 89 / 675 72 62 72.",
+      "image": "/images/toles-lisses-noir-01.jpeg",
+      "gallery": [
+        "/images/toles-lisses-noir-01.jpeg",
+        "/images/toles-lisses-noir-02.jpeg",
+        "/images/toles-lisses-noir-03.jpeg",
+        "/images/toles-lisses-noir-04.jpeg",
+        "/images/toles-lisses-noir-05.jpeg",
+        "/images/toles-lisses-noir-06.jpeg"
+      ],
+      "features": [
+        "Épaisseurs disponibles : 6/10e, 7/10e, 8/10e, 9/10e, 10/10e, 12/10e, 15/10e, 20/10e",
+        "Adaptées à tous types de réalisations, du léger au lourd",
+        "Surface lisse pour un travail précis",
+        "Excellente soudabilité et performance en atelier"
+      ],
+      "applications": [
+        "Fabrication métallique",
+        "Soudure & chaudronnerie",
+        "Portails, grilles et structures",
+        "Pièces industrielles",
+        "Travaux artisanaux et professionnels"
+      ],
+      "advantages": [
+        "Excellente résistance mécanique",
+        "Très bonne soudabilité",
+        "Adaptées aux exigences des professionnels",
+        "Disponibilité en quantité",
+        "Devis rapide et accompagnement professionnel"
+      ]
+    },
+    {
+      "id": "toles-lisses-galvanisees",
+      "categoryId": "structure-metallique-industrielle",
+      "title": "🛡 Tôles lisses en acier galvanisé",
+      "shortTitle": "Tôles lisses acier galvanisé",
+      "description": "Résistance maximale et protection durable pour les travaux exposés à l’humidité et aux conditions exigeantes. Avec ces épaisseurs, vous investissez dans la solidité et la durabilité. Disponible en stock : 693 44 89 89 / 675 72 62 72.",
+      "image": "/images/toles-lisses-acier-galvanise-01.jpeg",
+      "gallery": [
+        "/images/toles-lisses-acier-galvanise-01.jpeg",
+        "/images/toles-lisses-acier-galvanise-02.jpeg",
+        "/images/toles-lisses-acier-galvanise-03.jpeg"
+      ],
+      "features": [
+        "Épaisseurs : 15/10e (1,5 mm) et 20/10e (2 mm)",
+        "Protection anticorrosion grâce à la galvanisation",
+        "Excellente tenue en extérieur",
+        "Bonne aptitude à la transformation"
+      ],
+      "applications": [
+        "Fabrication de structures métalliques",
+        "Portails, portes et grilles robustes",
+        "Ouvrages exposés à l’humidité",
+        "Travaux industriels et professionnels",
+        "Carrosserie et équipements métalliques"
+      ],
+      "advantages": [
+        "Haute résistance mécanique",
+        "Longue durée de vie",
+        "Fiabilité et solidité dans le temps",
+        "Choix stratégique pour des ouvrages durables",
+        "Devis rapide et accompagnement professionnel"
+      ]
+    },
+    {
+      "id": "gabions-metalliques",
+      "categoryId": "structure-metallique-industrielle",
+      "title": "Gabions métalliques – Solution de soutènement durable",
+      "shortTitle": "Gabions métalliques",
+      "description": "Gabions métalliques robustes pour murs de soutènement, protection contre l'érosion et stabilisation de talus.",
+      "image": "/images/gabions-01.jpeg",
+      "gallery": [
+        "/images/gabions-01.jpeg",
+        "/images/gabions-02.jpeg",
+        "/images/gabions-03.jpeg"
+      ],
+      "features": [
+        "Maillage métallique haute résistance",
+        "Structure durable pour charges lourdes",
+        "Formats adaptés aux chantiers publics et privés"
+      ],
+      "applications": [
+        "Murs de soutènement",
+        "Protection contre l'érosion",
+        "Stabilisation de talus",
+        "Aménagements routiers et paysagers"
+      ],
+      "advantages": [
+        "Drainage naturel",
+        "Pose rapide et modulaire",
+        "Intégration esthétique au paysage"
+      ]
+    },
+    {
+      "id": "toles-couverture-accessoires",
+      "categoryId": "couverture-toiture",
+      "title": "Tôles de couverture professionnelles – Performance, protection et finition haut de gamme",
+      "shortTitle": "Tôles de couverture & accessoires",
+      "description": "Nous proposons des tôles de couverture en aluminium et en acier revêtu (prélaqué / aluzinc), conçues pour offrir une excellente protection contre les intempéries tout en garantissant une finition esthétique durable. Grâce à une gamme complète d’accessoires compatibles, nous fournissons une solution toiture complète adaptée aux projets résidentiels, industriels et commerciaux. Disponible en stock immédiatement. Contactez-nous pour un devis rapide et personnalisé : +238 693 44 89 89 / +238 675 72 62 72.",
+      "image": "/images/toles-01.jpeg",
+      "gallery": [
+        "/images/toles-01.jpeg",
+        "/images/toles-02.jpeg",
+        "/images/toles-03.jpeg",
+        "/images/toles-04.jpeg",
+        "/images/toles-05.jpeg"
+      ],
+      "features": [
+        "Types disponibles : Bac (4 & 5 nervures), Tôle tuile, Tôle ondulée",
+        "Épaisseurs acier revêtu : 0.26 mm, 0.30 mm, 0.40 mm, 0.50 mm",
+        "Épaisseurs aluminium : 0.35 mm, 0.40 mm, 0.50 mm, 0.60 mm",
+        "Couleurs : Vert, Bordeaux, Bleu ardoise, Bleu ciel, Noir, Rouge vif",
+        "Matériaux : Aluminium et acier revêtu anticorrosion",
+        "Accessoires disponibles : Faîtières, gouttières, bandes de rive, noues, rives de faîtage",
+        "Dimensions accessoires : longueurs 2 m & 4 m ; largeurs 33 cm, 40 cm, 50 cm"
+      ],
+      "applications": [
+        "Maisons résidentielles",
+        "Bâtiments industriels",
+        "Hangars et entrepôts",
+        "Bâtiments commerciaux",
+        "Ouvrages de toiture exposés aux intempéries"
+      ],
+      "advantages": [
+        "Excellente protection contre la corrosion",
+        "Étanchéité optimale face aux intempéries",
+        "Finition esthétique durable",
+        "Installation rapide et efficace",
+        "Longue durée de vie",
+        "Aluminium : très haute résistance à la corrosion, léger, idéal zones humides et côtières",
+        "Acier revêtu : excellent rapport qualité/prix et large choix de finitions",
+        "Solution complète tôle + accessoires pour une toiture solide, étanche et durable"
+      ]
+    },
+    {
+      "id": "carreaux",
+      "categoryId": "materiaux-construction",
+      "title": "Carreaux",
+      "shortTitle": "Carreaux",
+      "description": "Carreaux pour revêtement intérieur et extérieur, adaptés aux chantiers résidentiels et professionnels.",
+      "image": "",
+      "features": [
+        "Formats variés",
+        "Différentes finitions",
+        "Résistance adaptée aux usages"
+      ],
+      "applications": [
+        "Sols intérieurs",
+        "Murs de cuisines et salles d'eau",
+        "Espaces commerciaux"
+      ],
+      "advantages": [
+        "Entretien facile",
+        "Bon rendu esthétique",
+        "Durabilité"
+      ]
+    },
+    {
+      "id": "contreplaque",
+      "categoryId": "materiaux-construction",
+      "title": "Contreplaqué",
+      "shortTitle": "Contreplaqué",
+      "description": "Panneaux contreplaqués pour coffrage, agencement et ouvrages de construction.",
+      "image": "",
+      "features": [
+        "Épaisseurs multiples",
+        "Bonne stabilité dimensionnelle",
+        "Usage chantier et menuiserie"
+      ],
+      "applications": [
+        "Coffrage",
+        "Aménagement intérieur",
+        "Habillage"
+      ],
+      "advantages": [
+        "Résistant et pratique",
+        "Facile à découper",
+        "Bon rapport coût/performance"
+      ]
+    },
+    {
+      "id": "",
+      "categoryId": "materiaux-construction",
+      "title": "Fer à béton",
+      "shortTitle": "Fer à béton",
+      "description": "Produit en préparation. Contactez-nous pour planifier vos besoins en armatures acier.",
+      "image": "/images/pannes-03.jpeg",
+      "features": [
+        "Différents diamètres",
+        "Barres standards et sur mesure",
+        "Disponibilité prochaine"
+      ],
+      "applications": [
+        "Dalles et fondations",
+        "Poteaux et poutres",
+        "Ouvrages béton armé"
+      ],
+      "advantages": [
+        "Approvisionnement planifiable",
+        "Conformité chantier",
+        "Accompagnement technique"
+      ],
+      "availability": "coming-soon"
+    },
+    {
+      "id": "",
+      "categoryId": "revetements-finitions",
+      "title": "Revêtement époxy",
+      "shortTitle": "Revêtement époxy",
+      "description": "Solutions époxy pour sols techniques, industriels et zones à fort trafic.",
+      "image": "/images/gabions-01.jpeg",
+      "features": [
+        "Haute résistance chimique",
+        "Finition lisse ou antidérapante",
+        "Application multicouches"
+      ],
+      "applications": [
+        "Usines et ateliers",
+        "Parkings",
+        "Locaux techniques"
+      ],
+      "advantages": [
+        "Excellente tenue dans le temps",
+        "Nettoyage simple",
+        "Rendu professionnel"
+      ]
+    },
+    {
+      "id": "",
+      "categoryId": "revetements-finitions",
+      "title": "Finitions sols & murs",
+      "shortTitle": "Finitions sols & murs",
+      "description": "Produits de finition pour protéger et valoriser vos surfaces intérieures et extérieures.",
+      "image": "/images/gabions-02.jpeg",
+      "features": [
+        "Solutions décoratives",
+        "Produits de protection",
+        "Large choix de textures"
+      ],
+      "applications": [
+        "Maisons",
+        "Bureaux",
+        "Bâtiments commerciaux"
+      ],
+      "advantages": [
+        "Rendu esthétique soigné",
+        "Protection durable",
+        "Adapté à chaque usage"
+      ]
+    }
+  ]
+}

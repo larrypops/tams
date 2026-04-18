@@ -25,10 +25,20 @@ Ce projet a été migré de Vite vers Next.js (App Router).
 
 ## Ajouter un produit
 
-Les produits sont gérés via le fichier JSON :
+Le catalogue est géré via le fichier JSON :
 - `data/products.json`
 
-Pour ajouter un produit, ajoute simplement un nouvel objet dans ce tableau (avec les mêmes champs que les autres éléments : `id`, `title`, `shortTitle`, `description`, `image`, `features`, `applications`, `advantages`, etc.).
+Structure du fichier :
+- `categories`: menu des catégories (id, label, emoji)
+- `products`: liste des produits
+
+Pour ajouter un produit :
+1. Vérifier que la catégorie existe dans `categories`
+2. Ajouter un objet dans `products` avec :
+   `id`, `categoryId`, `title`, `shortTitle`, `description`, `image`, `features`, `applications`, `advantages`
+3. Optionnel : `gallery`, `videoUrl`, `specs`, `availability` (`available` ou `coming-soon`)
+
+La page `/produits` affiche automatiquement les produits groupés par catégorie dans l’ordre du menu JSON.
 
 ## Déploiement Vercel
 
