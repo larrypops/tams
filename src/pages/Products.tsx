@@ -201,7 +201,7 @@ export default function Products() {
                   transition={{ delay: index * 0.06 }}
                   className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <div className="relative aspect-[4/5] overflow-hidden bg-slate-100 sm:aspect-[5/6] lg:aspect-[4/3]">
+                  <div className="relative aspect-square overflow-hidden bg-slate-100 sm:aspect-[5/6] lg:aspect-[4/3]">
                     <img
                       src={product.image}
                       alt={product.title}
