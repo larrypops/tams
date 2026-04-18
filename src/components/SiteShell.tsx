@@ -268,12 +268,12 @@ function WhatsAppFloating() {
       href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, "")}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="group fixed right-8 bottom-8 z-50 flex items-center justify-center rounded-full bg-[#25D366] p-4 text-white shadow-2xl transition-transform hover:scale-110"
+      className="group fixed right-8 bottom-8 z-50 flex items-center justify-center rounded-full bg-white p-3 text-white shadow-2xl ring-4 ring-[#25D366]/25 transition-transform hover:scale-110"
     >
       <img
         src="/icons/whatsapp-logo.svg"
         alt="WhatsApp"
-        className="h-8 w-8"
+        className="h-10 w-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)]"
       />
       <span className="pointer-events-none absolute right-full mr-4 whitespace-nowrap rounded-lg bg-white px-4 py-2 text-sm font-bold text-brand-navy opacity-0 shadow-xl transition-opacity group-hover:opacity-100">
         Besoin d&apos;aide ? WhatsApp
