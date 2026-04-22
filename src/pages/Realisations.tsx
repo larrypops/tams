@@ -7,8 +7,11 @@ const REALISATION_IMAGES = [
   '/images/realisation-02.jpeg',
   '/images/realisations-03.jpeg',
   '/images/realisations-04.jpeg',
-  '/images/gabions-02.jpeg',
-  '/images/pannes-05.jpeg',
+  '/images/realisations-05.jpeg',
+  '/images/realisations-06.jpeg',
+  '/images/realisations-07.jpeg',
+  '/images/realisations-08.jpeg',
+  '/images/realisations-09.jpeg',
 ];
 
 export default function Realisations() {

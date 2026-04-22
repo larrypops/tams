@@ -6,8 +6,8 @@
       "emoji": "🏗"
     },
     {
-      "id": "couverture-toiture",
-      "label": "Couverture & toiture",
+      "id": "couverture-accessoires",
+      "label": "Couverture & accessoires",
       "emoji": "🏠"
     },
     {
@@ -117,6 +117,76 @@
       ]
     },
     {
+      "id": "poutrelles-ipe-acier",
+      "categoryId": "structure-metallique-industrielle",
+      "title": "🏗️ Poutrelles IPE en acier – Disponibles de 100 à 300",
+      "shortTitle": "Poutrelles IPE en acier",
+      "description": "La solution idéale pour des structures solides et fiables. Nos poutrelles IPE en acier sont adaptées aux chantiers modernes, pour des constructions légères comme pour des structures plus importantes. Besoin d’un devis ou d’un accompagnement technique ? (+237) 693 44 89 89 / (+237) 675 72 62 72.",
+      "image": "/images/poutrelles-01.jpeg",
+      "gallery": [
+        "/images/poutrelles-01.jpeg",
+        "/images/poutrelles-02.jpeg",
+        "/images/poutrelles-03.jpeg",
+        "/images/poutrelles-04.jpeg"
+      ],
+      "features": [
+        "Dimensions disponibles : IPE 100, 120, 140, 160, 180, 200, 220, 240, 270, 294, 300, 350, 450, 492",
+        "Acier à haute résistance et excellente capacité portante",
+        "Profil en I européen optimisé pour la répartition des charges",
+        "Bonne résistance à la déformation",
+        "Compatible avec les assemblages soudés ou boulonnés"
+      ],
+      "applications": [
+        "Charpentes métalliques",
+        "Structures de bâtiments (R+1, R+2, etc.)",
+        "Ossatures de maisons",
+        "Fabrication métallique et travaux de soudure",
+        "Hangars et bâtiments industriels"
+      ],
+      "advantages": [
+        "Sécurité et stabilité garanties",
+        "Gain de temps à la mise en œuvre",
+        "Adaptation facile à plusieurs types de projets",
+        "Réduction des risques de fissuration ou d’affaissement",
+        "Stock disponible immédiatement, produits conformes BTP et conseils techniques personnalisés"
+      ]
+    },
+    {
+      "id": "profiles-u-upn-upe",
+      "categoryId": "structure-metallique-industrielle",
+      "title": "🏗️ Profilés en U (UPN / UPE) – Acier de structure",
+      "shortTitle": "Profilés en U (UPN / UPE)",
+      "description": "Solution idéale pour renforts et structures métalliques. Nos profilés en U en acier sont conçus pour offrir solidité, stabilité et polyvalence dans de nombreux types d’ouvrages. Commande & informations : (+237) 693 44 89 89 / 675 72 62 72.",
+      "image": "/images/profiles-01.jpeg",
+      "gallery": [
+        "/images/profiles-01.jpeg",
+        "/images/profiles-02.jpeg",
+        "/images/profiles-03.jpeg"
+      ],
+      "features": [
+        "Types disponibles : UPN (ailes inclinées) et UPE (ailes parallèles)",
+        "Dimensions disponibles : U 80, U 100, U 120, U 140, U 160, U 180, U 200",
+        "Autres dimensions disponibles sur commande",
+        "Acier à haute résistance, bonne capacité de charge et excellente tenue mécanique",
+        "Assemblage facile (soudure / boulonnage), adapté aux structures légères et moyennes"
+      ],
+      "applications": [
+        "Renforcement de structures",
+        "Ossatures métalliques",
+        "Supports et encadrements",
+        "Fabrication de châssis métalliques",
+        "Construction industrielle"
+      ],
+      "advantages": [
+        "Polyvalence d’utilisation",
+        "Bon rapport poids / résistance",
+        "Facilité de mise en œuvre",
+        "Solution économique",
+        "UPN : plus courant et économique ; UPE : meilleure performance structurelle et fixation facilitée",
+        "Stock disponible, produits fiables et durables, conseils techniques adaptés"
+      ]
+    },
+    {
       "id": "toles-lisses-galvanisees",
       "categoryId": "structure-metallique-industrielle",
       "title": "🛡 Tôles lisses en acier galvanisé",
@@ -151,10 +221,10 @@
     },
     {
       "id": "gabions-metalliques",
-      "categoryId": "structure-metallique-industrielle",
-      "title": "Gabions métalliques – Solution de soutènement durable",
-      "shortTitle": "Gabions métalliques",
-      "description": "Gabions métalliques robustes pour murs de soutènement, protection contre l'érosion et stabilisation de talus.",
+      "categoryId": "materiaux-construction",
+      "title": "Gabillons métalliques en acier galvanisé – Solution de soutènement durable",
+      "shortTitle": "Gabillons métalliques en acier galvanisé",
+      "description": "Gabillons métalliques en acier galvanisé, robustes pour murs de soutènement, protection contre l'érosion et stabilisation de talus.",
       "image": "/images/gabions-01.jpeg",
       "gallery": [
         "/images/gabions-01.jpeg",
@@ -162,7 +232,7 @@
         "/images/gabions-03.jpeg"
       ],
       "features": [
-        "Maillage métallique haute résistance",
+        "Maillage métallique galvanisé haute résistance",
         "Structure durable pour charges lourdes",
         "Formats adaptés aux chantiers publics et privés"
       ],
@@ -179,11 +249,49 @@
       ]
     },
     {
+      "id": "toles-metro-bond",
+      "categoryId": "couverture-accessoires",
+      "title": "🏗️ Tôles Métro-Bond (imitation tuiles premium)",
+      "shortTitle": "Tôles Métro-Bond",
+      "description": "Solution de couverture moderne qui combine l’élégance des tuiles traditionnelles et la résistance du métal. Les tôles Métro-Bond offrent un rendu esthétique haut de gamme avec une excellente durabilité. Commande & informations : (+237) 693 44 89 89 / 675 72 62 72.",
+      "image": "/images/toles-metrobondes-01.jpeg",
+      "gallery": [
+        "/images/toles-metrobondes-01.jpeg",
+        "/images/toles-metrobondes-02.jpeg",
+        "/images/toles-metrobondes-03.jpeg",
+        "/images/toles-metrobondes-04.jpeg",
+        "/images/toles-metrobondes-05.jpeg",
+        "/images/toles-metrobondes-06.jpeg"
+      ],
+      "features": [
+        "Aspect tuile naturelle avec finition granuleuse ou lisse selon modèle",
+        "Matériau : acier galvanisé / aluzinc",
+        "Revêtement : protection anticorrosion + finition décorative",
+        "Épaisseurs usuelles : 0.30 mm à 0.50 mm",
+        "Résistance aux UV, à la pluie, à la chaleur et à l’humidité",
+        "Couleurs disponibles : Rouge tuile, Vert, Noir, Gris, Marron, Bleu"
+      ],
+      "applications": [
+        "Villas et maisons modernes",
+        "Résidences haut standing",
+        "Hôtels et bâtiments administratifs",
+        "Églises et projets architecturaux premium"
+      ],
+      "advantages": [
+        "Esthétique haut de gamme (effet tuile sans les contraintes)",
+        "Durée de vie longue et résistance à la corrosion",
+        "Réduction du bruit de pluie comparé aux tôles simples",
+        "Pose plus rapide que les tuiles traditionnelles",
+        "Entretien facile",
+        "Modèles visibles en showroom pour un choix assisté"
+      ]
+    },
+    {
       "id": "toles-couverture-accessoires",
-      "categoryId": "couverture-toiture",
+      "categoryId": "couverture-accessoires",
       "title": "Tôles de couverture professionnelles – Performance, protection et finition haut de gamme",
       "shortTitle": "Tôles de couverture & accessoires",
-      "description": "Nous proposons des tôles de couverture en aluminium et en acier revêtu (prélaqué / aluzinc), conçues pour offrir une excellente protection contre les intempéries tout en garantissant une finition esthétique durable. Grâce à une gamme complète d’accessoires compatibles, nous fournissons une solution toiture complète adaptée aux projets résidentiels, industriels et commerciaux. Disponible en stock immédiatement. Contactez-nous pour un devis rapide et personnalisé : +238 693 44 89 89 / +238 675 72 62 72.",
+      "description": "Nous proposons des tôles de couverture en aluminium et en acier revêtu (prélaqué / aluzinc), conçues pour offrir une excellente protection contre les intempéries tout en garantissant une finition esthétique durable. Grâce à une gamme complète d’accessoires compatibles, nous fournissons une solution toiture complète adaptée aux projets résidentiels, industriels et commerciaux. Disponible en stock immédiatement. Contactez-nous pour un devis rapide et personnalisé : +237 693 44 89 89 / +237 675 72 62 72.",
       "image": "/images/toles-01.jpeg",
       "gallery": [
         "/images/toles-01.jpeg",

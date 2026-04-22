@@ -39,6 +39,6 @@ export const CONTACT_INFO = {
   phone1: '+237 693 44 89 89',
   phone2: '+237 675 72 62 72',
   whatsapp: '+237 693 44 89 89',
-  email: 'tamsempireconsrution50@gmail.com',
+  email: 'tamsempireconstruction50@gmail.com',
   address: 'Douala, Cameroun',
 };
