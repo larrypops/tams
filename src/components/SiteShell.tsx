@@ -255,6 +255,12 @@ function Footer() {
             <a href="#" className="transition-colors hover:text-white">
               Confidentialité
             </a>
+            <Link
+              href="/admin/login"
+              className="text-gray-600 transition-colors hover:text-white"
+            >
+              Admin
+            </Link>
           </div>
         </div>
       </div>
@@ -293,15 +299,22 @@ function ScrollToTop() {
 }
 
 export default function SiteShell({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+  const isAdminRoute = pathname.startsWith("/admin");
+
   return (
     <>
       <ScrollToTop />
-      <div className="flex min-h-screen flex-col">
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-        <WhatsAppFloating />
-      </div>
+      {isAdminRoute ? (
+        <main className="min-h-screen bg-slate-50">{children}</main>
+      ) : (
+        <div className="flex min-h-screen flex-col">
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+          <WhatsAppFloating />
+        </div>
+      )}
     </>
   );
 }

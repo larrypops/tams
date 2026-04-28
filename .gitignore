@@ -3,6 +3,9 @@ node_modules
 out
 .DS_Store
 *.log
+.env
+.env.local
+.env.*.local
 /images
 !/public/images
 !/public/images/**
