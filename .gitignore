@@ -10,3 +10,5 @@ out
 !/public/images
 !/public/images/**
 /public/images/.DS_Store
+app*PM/
+tam's-empire-construction*PM/
