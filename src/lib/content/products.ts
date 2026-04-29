@@ -222,6 +222,11 @@ export async function getProductsCatalog() {
   return catalog;
 }
 
+export async function getProductById(id: string) {
+  const { catalog } = await loadCatalog();
+  return catalog.products.find((product) => product.id === id) ?? null;
+}
+
 export async function createProduct(input: unknown) {
   const loaded = await loadCatalog();
   const product = validateProductInput(
@@ -279,4 +284,3 @@ export async function deleteProduct(id: string) {
     `cms(products): delete ${id}`,
   );
 }
-

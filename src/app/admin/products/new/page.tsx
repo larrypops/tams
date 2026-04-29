@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import AdminProductsListClient from "@/src/components/admin/AdminProductsListClient";
+import AdminProductFormClient from "@/src/components/admin/AdminProductFormClient";
 import { requireAdminPageSession } from "@/src/lib/admin/guards";
 import { getProductsCatalog } from "@/src/lib/content/products";
 
 export const metadata: Metadata = {
-  title: "Admin Produits | TAM'S EMPIRE",
+  title: "Créer un produit | Admin TAM'S EMPIRE",
   robots: { index: false, follow: false },
 };
 
-export default async function AdminProductsPage() {
+export default async function AdminCreateProductPage() {
   const username = await requireAdminPageSession();
   const catalog = await getProductsCatalog();
 
   return (
-    <AdminProductsListClient
+    <AdminProductFormClient
+      mode="create"
       username={username}
       categories={catalog.categories}
-      initialProducts={catalog.products}
     />
   );
 }
+
