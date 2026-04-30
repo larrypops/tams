@@ -106,7 +106,7 @@ export default function AdminProductsListClient({
   }
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6 pb-24 sm:px-6 lg:px-8 lg:py-10 lg:pb-10">
+    <div className="mx-auto max-w-7xl px-4 py-6 pb-28 sm:px-6 md:pb-10 lg:px-8 lg:py-10">
       <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_24px_60px_-34px_rgba(20,43,80,0.35)] sm:p-7">
         <div className="pointer-events-none absolute -top-16 -right-10 h-44 w-44 rounded-full bg-brand-gold/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 -left-16 h-52 w-52 rounded-full bg-brand-navy/10 blur-3xl" />
@@ -122,10 +122,10 @@ export default function AdminProductsListClient({
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
+          <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap">
             <Link
               href="/admin/products/new"
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-brand-gold bg-brand-gold px-4 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-yellow-600"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-brand-gold bg-brand-gold px-4 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-yellow-600 sm:w-auto"
             >
               <Plus size={16} />
               Créer un produit
@@ -134,7 +134,7 @@ export default function AdminProductsListClient({
               type="button"
               onClick={logout}
               disabled={logoutLoading}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-navy px-4 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-brand-navy/90 disabled:opacity-70"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-navy px-4 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-brand-navy/90 disabled:opacity-70 sm:w-auto"
             >
               <LogOut size={16} />
               {logoutLoading ? "Déconnexion..." : "Déconnexion"}
@@ -238,9 +238,9 @@ export default function AdminProductsListClient({
           )}
         </div>
 
-        <div className="space-y-3">
+        <div className="grid grid-cols-1 gap-3 xl:grid-cols-2">
           {filteredProducts.length === 0 ? (
-            <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center text-sm text-slate-500">
+            <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center text-sm text-slate-500 xl:col-span-2">
               <p>Aucun produit trouvé avec ce filtre.</p>
               <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
                 <button
@@ -269,7 +269,7 @@ export default function AdminProductsListClient({
               return (
                 <article
                   key={product.id}
-                  className="rounded-2xl border border-slate-200 bg-white p-3 transition-all hover:border-brand-gold/60 sm:p-4"
+                  className="rounded-2xl border border-slate-200 bg-white p-3 transition-all hover:border-brand-gold/60 hover:shadow-sm sm:p-4"
                 >
                   <div className="flex gap-3">
                     <div className="h-14 w-14 shrink-0 overflow-hidden rounded-xl bg-slate-100">
@@ -327,7 +327,7 @@ export default function AdminProductsListClient({
         </div>
       </section>
 
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 p-3 backdrop-blur xl:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:hidden">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
           <div className="min-w-0">
             <p className="truncate text-xs font-semibold text-slate-700">Action rapide</p>
@@ -345,4 +345,3 @@ export default function AdminProductsListClient({
     </div>
   );
 }
-

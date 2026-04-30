@@ -11,7 +11,7 @@ export const DEFAULT_KEYWORDS = [
   "buses métalliques",
   "pannes métalliques",
   "tôles de couverture",
-  "Douala",
+  "Yaoundé",
   "Cameroun",
 ];
 
@@ -106,10 +106,9 @@ export function buildOrganizationJsonLd() {
     email: "tamsempireconstruction50@gmail.com",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Douala",
+      addressLocality: "Yaoundé",
       addressCountry: "CM",
     },
     sameAs: [absoluteUrl("/")],
   };
 }
-

@@ -243,7 +243,7 @@ export default function AdminProductFormClient({
   }
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6 pb-24 sm:px-6 lg:px-8 lg:py-10 lg:pb-10">
+    <div className="mx-auto max-w-6xl px-4 py-6 pb-28 sm:px-6 md:pb-10 lg:px-8 lg:py-10">
       <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_24px_60px_-34px_rgba(20,43,80,0.35)] sm:p-7">
         <div className="pointer-events-none absolute -top-16 -right-10 h-44 w-44 rounded-full bg-brand-gold/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 -left-16 h-52 w-52 rounded-full bg-brand-navy/10 blur-3xl" />
@@ -259,17 +259,17 @@ export default function AdminProductFormClient({
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap">
             <Link
               href="/admin/products"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100 sm:w-auto"
             >
               <ArrowLeft size={16} />
               Retour aux produits
             </Link>
             <Link
               href="/admin/products/new"
-              className="inline-flex items-center gap-2 rounded-xl border border-brand-gold bg-brand-gold px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-yellow-600"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-brand-gold bg-brand-gold px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-yellow-600 sm:w-auto"
             >
               <Package size={16} />
               Créer un produit
@@ -515,7 +515,7 @@ export default function AdminProductFormClient({
         </form>
       </section>
 
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 p-3 backdrop-blur xl:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:hidden">
         <div className="mx-auto flex max-w-5xl items-center gap-3">
           <div className="min-w-0 flex-1">
             <p className="truncate text-xs font-semibold text-slate-700">
@@ -539,4 +539,3 @@ export default function AdminProductFormClient({
     </div>
   );
 }
-
