@@ -243,24 +243,35 @@ function Footer() {
           </div>
         </div>
 
+        <div className="mb-10 rounded-2xl border border-white/15 bg-white/5 p-4 sm:p-5">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-sm font-semibold text-white">Accès administrateur</p>
+              <p className="text-xs text-gray-300">
+                Ouvrez le panel pour gérer les produits et contenus.
+              </p>
+            </div>
+            <Link
+              href="/admin/login"
+              className="inline-flex items-center justify-center rounded-xl border border-brand-gold bg-brand-gold px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-yellow-600"
+            >
+              Ouvrir le panel admin
+            </Link>
+          </div>
+        </div>
+
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-gray-500 md:flex-row">
           <p>
             © {new Date().getFullYear()} TAM&apos;S EMPIRE CONSTRUCTION SARL. Tous
             droits réservés.
           </p>
-          <div className="flex gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-5 md:gap-8">
             <a href="#" className="transition-colors hover:text-white">
               Mentions Légales
             </a>
             <a href="#" className="transition-colors hover:text-white">
               Confidentialité
             </a>
-            <Link
-              href="/admin/login"
-              className="text-gray-600 transition-colors hover:text-white"
-            >
-              Admin
-            </Link>
           </div>
         </div>
       </div>
@@ -274,14 +285,14 @@ function WhatsAppFloating() {
       href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, "")}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="group fixed right-8 bottom-8 z-50 flex items-center justify-center rounded-full bg-white p-3 text-white shadow-2xl ring-4 ring-[#25D366]/25 transition-transform hover:scale-110"
+      className="group fixed bottom-6 left-4 z-50 flex items-center justify-center rounded-full bg-white p-3 text-white shadow-2xl ring-4 ring-[#25D366]/25 transition-transform hover:scale-110 md:bottom-8 md:left-6 lg:right-8 lg:left-auto"
     >
       <img
         src="/icons/whatsapp-logo.svg"
         alt="WhatsApp"
         className="h-10 w-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)]"
       />
-      <span className="pointer-events-none absolute right-full mr-4 whitespace-nowrap rounded-lg bg-white px-4 py-2 text-sm font-bold text-brand-navy opacity-0 shadow-xl transition-opacity group-hover:opacity-100">
+      <span className="pointer-events-none absolute right-full mr-4 hidden whitespace-nowrap rounded-lg bg-white px-4 py-2 text-sm font-bold text-brand-navy opacity-0 shadow-xl transition-opacity group-hover:opacity-100 lg:block">
         Besoin d&apos;aide ? WhatsApp
       </span>
     </a>
