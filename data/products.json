@@ -28,12 +28,16 @@
       "title": "Buses métalliques galvanisées – Solution durable pour vos ouvrages",
       "shortTitle": "Buses métalliques",
       "description": "Nos buses métalliques en acier galvanisé assurent un drainage efficace des eaux et garantissent la durabilité des ouvrages routiers et hydrauliques.",
-      "image": "/images/buse-01.jpeg",
+      "image": "https://res.cloudinary.com/dhzqadlwc/image/upload/v1785433994/tams/products/tbueofrkgdxipkwimapu.jpg",
       "gallery": [
         "/images/buse-01.jpeg",
         "/images/buse-02.jpeg",
         "/images/buse-03.jpeg",
-        "/images/buse-04.jpeg"
+        "/images/buse-04.jpeg",
+        "https://res.cloudinary.com/dhzqadlwc/image/upload/v1785433859/tams/products/xo1nv3io05gxlqvqriao.png",
+        "https://res.cloudinary.com/dhzqadlwc/image/upload/v1785433882/tams/products/kf4y8tkycmwkvbrbcy80.png",
+        "https://res.cloudinary.com/dhzqadlwc/image/upload/v1785433921/tams/products/ke89e57shgxtw2chn2ao.jpg",
+        "https://res.cloudinary.com/dhzqadlwc/image/upload/v1785433994/tams/products/tbueofrkgdxipkwimapu.jpg"
       ],
       "features": [
         "Diamètres : 800 mm; 1000 mm; 1500 mm; 2000 mm; 3000 mm; 4000 mm",
@@ -49,7 +53,8 @@
         "Haute résistance mécanique",
         "Longue durée de vie",
         "Installation rapide"
-      ]
+      ],
+      "availability": "available"
     },
     {
       "id": "pannes-metalliques",
