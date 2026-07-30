@@ -57,14 +57,15 @@
       "title": "Pannes métalliques galvanisées (Z & C)",
       "shortTitle": "Pannes métalliques (Z & C)",
       "description": "Pannes profils Z et C en acier galvanisé pour charpentes métalliques robustes et durables.",
-      "image": "https://res.cloudinary.com/dhzqadlwc/image/upload/v1785431984/tams/products/s5iql0ozt3crj1wrbrpu.jpg",
+      "image": "https://res.cloudinary.com/dhzqadlwc/image/upload/v1785433742/tams/products/i0a7miino7nklxzahoma.png",
       "gallery": [
         "/images/pannes-01.jpeg",
         "/images/pannes-02.jpeg",
         "/images/pannes-03.jpeg",
         "/images/pannes-04.jpeg",
         "/images/pannes-05.jpeg",
-        "/images/pannes C-06.jpeg"
+        "/images/pannes C-06.jpeg",
+        "https://res.cloudinary.com/dhzqadlwc/image/upload/v1785433742/tams/products/i0a7miino7nklxzahoma.png"
       ],
       "features": [
         "Profils : Z et C",
