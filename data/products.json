@@ -131,15 +131,17 @@
       "title": "🏗️ Poutrelles IPE en acier – Disponibles de 100 à 300",
       "shortTitle": "Poutrelles IPE en acier",
       "description": "La solution idéale pour des structures solides et fiables. Nos poutrelles IPE en acier sont adaptées aux chantiers modernes, pour des constructions légères comme pour des structures plus importantes. Besoin d’un devis ou d’un accompagnement technique ? (+237) 693 44 89 89 / (+237) 675 72 62 72.",
-      "image": "/images/poutrelles-01.jpeg",
+      "image": "https://res.cloudinary.com/dhzqadlwc/image/upload/v1791570379/tams/products/gckxlijxydmexonimaqw.jpg",
       "gallery": [
         "/images/poutrelles-01.jpeg",
         "/images/poutrelles-02.jpeg",
         "/images/poutrelles-03.jpeg",
-        "/images/poutrelles-04.jpeg"
+        "/images/poutrelles-04.jpeg",
+        "/Images/poutrelles-05.jpg",
+        "/images/poutrelles-06.jpg"
       ],
       "features": [
-        "Dimensions disponibles : IPE 100, 120, 140, 160, 180, 200, 220, 240, 270, 294, 300, 350, 450, 492",
+        "Dimensions disponibles : IPE 80, 100, 120, 140, 160, 180, 200, 220, 240, 270, 300, 350, 450, 500",
         "Acier à haute résistance et excellente capacité portante",
         "Profil en I européen optimisé pour la répartition des charges",
         "Bonne résistance à la déformation",
